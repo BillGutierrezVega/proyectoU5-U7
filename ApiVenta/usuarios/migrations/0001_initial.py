@@ -12,12 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='ServicesMoldel',
+            name='UserModel',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('descripcion', models.TextField()),
-                ('logo', models.CharField(max_length=150)),
+                ('email', models.EmailField(max_length=254)),
+                ('username', models.CharField(max_length=150)),
+                ('password', models.CharField(max_length=100)),
             ],
         ),
     ]

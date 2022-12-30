@@ -4,9 +4,11 @@ from servicios.api import ServicesViewSet
 
 
 
-router = routers.DefaultRouter(trailing_slash=False)
+router = routers.DefaultRouter(trailing_slash=True)
 
-router.register('servicios/', ServicesViewSet, 'servicios')
+
+router.register('api/servicios', ServicesViewSet, 'servicios')
+
 
 urlpatterns = router.urls
  

@@ -12,4 +12,3 @@ class ServicesSerializer(serializers.ModelSerializer):
             'descripcion',
             'logo',
         )
-        read_only_fields = ('id',)
